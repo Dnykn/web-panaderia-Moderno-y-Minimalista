@@ -41,11 +41,11 @@ Portafolio: https://andy-portafolio.netlify.app
 
 ## 🎨 Concepto del Diseño
 
-**Estilo:** [Estilo del Diseño]
+**Estilo:** [personalidad moderna y minimalista]
 
-La paleta de colores [describe brevemente los colores, ej: tonos crema y marrones] y la tipografía [describe las fuentes, ej: una serif elegante para títulos y una sans-serif legible para el cuerpo] fueron seleccionadas para transmitir una sensación de [describe la emoción, ej: tradición, modernidad, artesanía].
+La paleta de colores [blanco, gris oscuro y un acento vibrante de amarillo] y la tipografía [fuente sans-serif limpia y geométrica (Montserrat)] fueron seleccionadas para transmitir una sensación de elegancia, limpieza y calidad artesanal.
 
-El elemento interactivo principal, un [nombre del elemento, ej: carrusel], fue diseñado para [explica el propósito, ej: destacar los productos estrella de forma dinámica y atractiva].
+El elemento interactivo principal, un menú de pestañas, fue diseñado para permitir al usuario navegar por diferentes categorías de productos de manera eficiente y sin recargar la página
 
 ---
 
