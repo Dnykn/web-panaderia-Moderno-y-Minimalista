@@ -1,0 +1,420 @@
+/* --- Variables --- */
+:root {
+    --color-principal: #1a1a1a; /* Casi negro */
+    --color-fondo: #ffffff;
+    --color-acento: #FFD700; /* Amarillo Oro */
+    --color-texto: #4f4f4f;
+    --fuente-principal: 'Montserrat', sans-serif;
+    --color-fondo-ligero: #f9f9f9;
+}
+
+/* --- Estilos Generales --- */
+body {
+    font-family: var(--fuente-principal);
+    line-height: 1.7;
+    color: var(--color-texto);
+    margin: 0;
+    background-color: var(--color-fondo);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+h1, h2, h3, h4 {
+    font-weight: 600;
+    color: var(--color-principal);
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* --- Header y Navegación --- */
+.header {
+    background-color: var(--color-fondo);
+    border-bottom: 1px solid #eee;
+    padding: 1rem 0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-weight: 700;
+    font-size: 1.5rem;
+    color: var(--color-principal);
+    text-decoration: none;
+}
+
+.nav a {
+    color: var(--color-texto);
+    text-decoration: none;
+    margin-left: 2rem;
+    transition: color 0.3s;
+}
+
+.nav a:hover {
+    color: var(--color-acento);
+}
+
+/* --- Hero Section --- */
+.hero {
+    background-color: var(--color-fondo-ligero);
+    text-align: center;
+    padding: 6rem 1rem;
+}
+
+.hero h1 {
+    font-size: 3.5rem;
+    margin-bottom: 1rem;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.cta-button {
+    display: inline-block;
+    background-color: var(--color-acento);
+    color: var(--color-principal);
+    padding: 12px 30px;
+    text-decoration: none;
+    font-weight: 600;
+    border-radius: 5px;
+    margin-top: 2rem;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.cta-button:hover {
+    background-color: #e6c300;
+    transform: translateY(-2px);
+}
+
+/* --- Secciones --- */
+.section {
+    padding: 5rem 1rem;
+}
+
+.section h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+}
+
+/* --- Proceso --- */
+.process-steps {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 3rem;
+    text-align: center;
+}
+
+.step h3 {
+    color: var(--color-acento);
+}
+
+/* --- Menú con Pestañas (Catálogo) --- */
+.menu-tabs {
+    text-align: center;
+    margin-bottom: 2rem;
+    border-bottom: 1px solid #eee;
+}
+
+.tab-button {
+    background: none;
+    border: none;
+    font-family: var(--fuente-principal);
+    font-size: 1.1rem;
+    padding: 1rem 2rem;
+    cursor: pointer;
+    color: var(--color-texto);
+    position: relative;
+    top: 1px;
+    transition: color 0.3s;
+}
+
+.tab-button:hover {
+    color: var(--color-acento);
+}
+
+.tab-button.active {
+    color: var(--color-principal);
+    font-weight: 600;
+    border-bottom: 3px solid var(--color-acento);
+}
+
+.menu-content {
+    display: none;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    animation: fadeIn 0.5s;
+}
+
+.menu-content.active {
+    display: grid;
+}
+
+.menu-item img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.menu-item-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0;
+    border-bottom: 1px solid #eee;
+}
+
+.price {
+    font-weight: 600;
+    color: var(--color-principal);
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+/* --- Formulario de Pedido --- */
+.bg-light {
+    background-color: var(--color-fondo-ligero);
+}
+
+.order-form {
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+    margin: 2rem auto;
+    gap: 1rem;
+}
+
+.order-form input,
+.order-form textarea {
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-family: var(--fuente-principal);
+    font-size: 1rem;
+}
+
+.order-form button {
+    background-color: var(--color-acento);
+    color: var(--color-principal);
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 1rem;
+    transition: background-color 0.3s;
+}
+
+.order-form button:hover {
+    background-color: #e6c300;
+}
+
+/* --- Contacto y Mapa --- */
+.contact-section {
+    background-color: var(--color-principal);
+    color: #f9f9f9;
+    text-align: center;
+}
+
+.contact-section h2 {
+    color: var(--color-acento);
+}
+
+.map-container-modern {
+    margin-top: 2rem;
+    border-radius: 8px;
+    overflow: hidden;
+}
+.map-container-modern iframe {
+    width: 100%;
+    height: 400px;
+    border: 0;
+    filter: grayscale(100%);
+}
+
+/* --- Footer --- */
+.footer {
+    text-align: center;
+    padding: 2rem 0;
+    border-top: 1px solid #eee;
+}
+
+/* --- Animaciones de Scroll --- */
+.animate-on-scroll {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.animate-on-scroll.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* --- Media Queries para Responsividad --- */
+@media (max-width: 768px) {
+    .header-content {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .nav {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+    }
+    
+    .nav a {
+        margin-left: 0;
+    }
+
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+}
+
+/* --- Estilos para Menú con Pestañas --- */
+.menu-tabs {
+    text-align: center;
+    margin-bottom: 2rem;
+    border-bottom: 1px solid #eee;
+}
+
+.tab-button {
+    background: none;
+    border: none;
+    font-family: var(--fuente-principal);
+    font-size: 1.1rem;
+    padding: 1rem 2rem;
+    cursor: pointer;
+    color: var(--color-texto);
+    position: relative;
+    top: 1px; /* Para que el borde inferior se alinee */
+    transition: color 0.3s;
+}
+
+.tab-button:hover {
+    color: var(--color-acento);
+}
+
+.tab-button.active {
+    color: var(--color-principal);
+    font-weight: 600;
+    border-bottom: 3px solid var(--color-acento);
+}
+
+.menu-content {
+    display: none; /* Oculto por defecto */
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    animation: fadeIn 0.5s;
+}
+
+.menu-content.active {
+    display: grid; /* Se muestra al estar activo */
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+/* --- Estilos para el Mapa Moderno --- */
+.map-container-modern {
+    margin-top: 2rem;
+    border-radius: 8px;
+    overflow: hidden;
+}
+.map-container-modern iframe {
+    width: 100%;
+    height: 400px;
+    filter: grayscale(100%); /* Efecto blanco y negro para el estilo minimalista */
+}
+
+/* ... CSS anterior ... */
+
+/* Estilos para el formulario de pedido */
+.order-form {
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+    margin: 2rem auto;
+    gap: 1rem;
+}
+.order-form input,
+.order-form textarea {
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-family: var(--fuente-principal);
+    font-size: 1rem;
+}
+.order-form button {
+    background-color: var(--color-acento);
+    color: var(--color-principal);
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 1rem;
+    transition: background-color 0.3s;
+}
+.order-form button:hover {
+    background-color: #e6c300;
+}
+
+/* Estilos para la animación de scroll (slide-in) */
+.animate-on-scroll {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+.animate-on-scroll.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* --- DETALLE ESPECIAL: Hover con Zoom y Sombra --- */
+.menu-item {
+    overflow: hidden; /* Importante para contener el zoom de la imagen */
+    border-radius: 5px; /* Para que las esquinas se vean bien */
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.menu-item img {
+    transition: transform 0.4s ease;
+}
+
+.menu-item:hover {
+    transform: translateY(-8px); /* Levanta la tarjeta */
+    box-shadow: 0 15px 30px rgba(0,0,0,0.1); /* Sombra más pronunciada */
+}
+
+.menu-item:hover img {
+    transform: scale(1.05); /* Zoom sutil en la imagen */
+}

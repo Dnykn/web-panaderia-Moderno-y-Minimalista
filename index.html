@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Artisan Bakes - Panadería Moderna</title>
+    
+    <!-- Esta es la línea crucial. Asegúrate de que el 'href' es correcto. -->
+    <link rel="stylesheet" href="style.css"> 
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <div class="container header-content">
+            <span class="logo">Artisan Bakes</span>
+            <nav class="nav">
+                <a href="#proceso">Proceso</a>
+                <a href="#menu">Catálogo</a>
+                <a href="#pedido">Pedido</a>
+                <a href="#contacto">Contacto</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container">
+                <h1>El arte de hornear, simplificado.</h1>
+                <p>Ingredientes puros. Técnicas modernas. Sabor inolvidable.</p>
+                <a href="#menu" class="cta-button">Ver el Catálogo</a>
+            </div>
+        </section>
+
+        <section id="proceso" class="section animate-on-scroll">
+            <div class="container">
+                <h2>Nuestro Proceso</h2>
+                <div class="process-steps">
+                    <div class="step">
+                        <h3>01. Selección</h3>
+                        <p>Elegimos harinas orgánicas y los ingredientes más frescos del mercado local.</p>
+                    </div>
+                    <div class="step">
+                        <h3>02. Fermentación</h3>
+                        <p>Nuestra masa madre, cuidada por años, garantiza una fermentación lenta y llena de sabor.</p>
+                    </div>
+                    <div class="step">
+                        <h3>03. Horneado</h3>
+                        <p>Hornos de última generación para una corteza perfecta y una miga aireada.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECCIÓN DE CATÁLOGO CON PESTAÑAS -->
+        <section id="menu" class="section animate-on-scroll">
+            <div class="container">
+                <h2>Catálogo para Distribuidores</h2>
+                <div class="menu-tabs">
+                    <button class="tab-button active" data-tab="panes">Panes</button>
+                    <button class="tab-button" data-tab="dulces">Dulces</button>
+                    <button class="tab-button" data-tab="bebidas">Bebidas</button>
+                </div>
+                <div class="menu-content-container">
+                    <!-- Contenido Panes -->
+                    <div id="panes" class="menu-content active">
+                        <div class="menu-item">
+                            <img src="imagenes/Pan-Dulce-blog.jpg" alt="Pan integral con semillas">
+                            <div class="menu-item-info">
+                                <h4>Pan Integral de Semillas</h4>
+                                <span class="price">$5.00</span>
+                            </div>
+                        </div>
+                        <div class="menu-item">
+                            <img src="imagenes/Pan-Dulce-blog.jpg" alt="Baguette">
+                            <div class="menu-item-info">
+                                <h4>Baguette Clásica</h4>
+                                <span class="price">$3.50</span>
+                            </div>
+                        </div>
+                        <div class="menu-item">
+                            <img src="imagenes/Pan-Dulce-blog.jpg" alt="Focaccia de romero">
+                            <div class="menu-item-info">
+                                <h4>Focaccia de Romero y Sal Marina</h4>
+                                <span class="price">$6.50</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Contenido Dulces -->
+                    <div id="dulces" class="menu-content">
+                        <div class="menu-item">
+                            <img src="imagenes/Pan-Dulce-blog.jpg" alt="Cruffin">
+                            <div class="menu-item-info"><h4>Cruffin de Dulce de Leche</h4><span class="price">$4.00</span></div>
+                        </div>
+                        <div class="menu-item">
+                            <img src="imagenes/Pan-Dulce-blog.jpg" alt="Rol de Canela">
+                            <div class="menu-item-info"><h4>Rol de Canela Glaseado</h4><span class="price">$4.50</span></div>
+                        </div>
+                    </div>
+                    <!-- Contenido Bebidas -->
+                    <div id="bebidas" class="menu-content">
+                        <div class="menu-item">
+                            <img src="imagenes/Pan-Dulce-blog.jpg" alt="Café Latte">
+                            <div class="menu-item-info"><h4>Café Latte Artesanal</h4><span class="price">$3.00</span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- NUEVA SECCIÓN: FORMULARIO DE PEDIDO -->
+        <section id="pedido" class="section bg-light animate-on-scroll">
+            <div class="container">
+                <h2>Realiza tu Pedido de Distribución</h2>
+                <p>Completa el formulario y te contactaremos para confirmar tu orden.</p>
+                <form id="order-form" class="order-form">
+                    <input type="text" id="businessName" placeholder="Nombre de tu Negocio" required>
+                    <input type="text" id="contactPerson" placeholder="Persona de Contacto" required>
+                    <textarea id="orderDetails" rows="6" placeholder="Detalla tu pedido aquí (ej: 20 Baguettes, 15 Croissants, 10 Focaccias)" required></textarea>
+                    <button type="submit">Enviar Pedido por WhatsApp</button>
+                </form>
+            </div>
+        </section>
+
+        <!-- SECCIÓN DE MAPA -->
+        <section id="contacto" class="section contact-section">
+            <div class="container">
+                <h2>Encuéntranos</h2>
+                <p>Av. Vanguardia 456, Distrito Creativo.</p>
+                <p><strong>Email:</strong> hola@artisanbakes.com</p>
+                <div class="map-container-modern">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3198.85785315575!2d-3.69083868471243!3d40.41677537936528!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd422880a9f5d5e1%3A0x1d1e4e4e4e4e4e4!2sPuerta%20del%20Sol%2C%20Madrid!5e0!3m2!1ses!2ses!4v1678886543210!5m2!1ses!2ses" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <footer class="footer">
+        <div class="container">
+            <p>Artisan Bakes © 2024</p>
+        </div>
+    </footer>
+
+    <script>
+        // --- LÓGICA DE PESTAÑAS DEL CATÁLOGO ---
+        const tabs = document.querySelectorAll('[data-tab]');
+        const tabContents = document.querySelectorAll('.menu-content');
+
+        tabs.forEach(tab => {
+            tab.addEventListener('click', () => {
+                const target = document.querySelector('#' + tab.dataset.tab);
+
+                tabContents.forEach(content => content.classList.remove('active'));
+                tabs.forEach(t => t.classList.remove('active'));
+
+                tab.classList.add('active');
+                target.classList.add('active');
+            });
+        });
+
+        // --- LÓGICA FORMULARIO WHATSAPP ---
+        document.getElementById('order-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            const numero = 'TUNUMERO'; // <-- IMPORTANTE: Reemplaza con tu número
+            const negocio = document.getElementById('businessName').value;
+            const contacto = document.getElementById('contactPerson').value;
+            const pedido = document.getElementById('orderDetails').value;
+
+            const mensaje = `*Nuevo Pedido de Distribución*\n\n*Negocio:* ${negocio}\n*Contacto:* ${contacto}\n\n*Detalles del Pedido:*\n${pedido}`;
+            const url = `https://api.whatsapp.com/send?phone=${numero}&text=${encodeURIComponent(mensaje)}`;
+            
+            window.open(url, '_blank');
+        });
+
+        // --- LÓGICA DE ANIMACIÓN AL SCROLL ---
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach((entry) => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, { threshold: 0.1 });
+
+        document.querySelectorAll('.animate-on-scroll').forEach((el) => {
+            observer.observe(el);
+        });
+    </script>
+</body>
+</html>
